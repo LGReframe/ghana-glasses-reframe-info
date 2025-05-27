@@ -35,7 +35,7 @@ const About = () => {
                   <p className="text-gray-600">Students</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="text-2xl font-bold text-gray-800">2025</h3>
+                  <h3 className="text-2xl font-bold text-gray-800">2012</h3>
                   <p className="text-gray-600">Founded</p>
                 </div>
               </div>
