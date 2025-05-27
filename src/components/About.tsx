@@ -3,9 +3,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              About Enactus Lüneburg
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Enactus </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">Enactus is a social entrepreneurship initiative operating in 37 countries all over the world, whose members pursue the goal of creating an economic perspective for third parties and serving the common good by founding sustainable, social start-ups.</p>
             
             <div className="flex items-center space-x-4">
