@@ -1,5 +1,5 @@
 
-import { Target, Heart, Globe, TrendingUp } from "lucide-react";
+import { Target, Heart, TrendingUp } from "lucide-react";
 
 const Mission = () => {
   const principles = [
@@ -17,11 +17,6 @@ const Mission = () => {
       icon: TrendingUp,
       title: "Economic Sustainability",
       description: "Building profitable business models that ensure long-term project viability."
-    },
-    {
-      icon: Globe,
-      title: "Global Reach",
-      description: "Starting local in Ghana with the vision to expand globally."
     }
   ];
 
@@ -38,7 +33,7 @@ const Mission = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {principles.map((principle, index) => (
             <div 
               key={index} 

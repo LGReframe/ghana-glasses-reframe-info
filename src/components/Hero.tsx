@@ -1,10 +1,17 @@
+
 import { Button } from "@/components/ui/button";
 import { Glasses } from "lucide-react";
+
 const Hero = () => {
-  return <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
+  return (
+    <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <div className="flex justify-center mb-8 rounded-sm">
-          <img src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" alt="Reframe Logo" className="h-24 md:h-32 object-contain" />
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" 
+            alt="Reframe Logo" 
+            className="h-24 md:h-32 object-contain rounded-lg" 
+          />
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
@@ -30,6 +37,8 @@ const Hero = () => {
           <Glasses className="h-16 w-16 text-gray-400 animate-pulse" />
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

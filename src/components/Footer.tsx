@@ -1,5 +1,6 @@
 
 import { Mail, Globe, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" 
                 alt="Reframe Logo" 
-                className="h-8 object-contain"
+                className="h-8 object-contain rounded"
               />
               <h3 className="text-xl font-bold text-white">Reframe</h3>
             </div>
@@ -44,9 +45,11 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Interested in our work or want to collaborate? We'd love to hear from you.
             </p>
-            <button className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2 rounded-lg transition-colors duration-300">
-              Contact Us
-            </button>
+            <Link to="/contact">
+              <button className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
         
