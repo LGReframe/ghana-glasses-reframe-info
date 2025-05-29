@@ -4,33 +4,38 @@ import { User } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Team Member 1",
+      name: "Max Dannenbaum",
       role: "Project Lead",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 2",
-      role: "Business Development",
+      name: "Constantin Beever",
+      role: "Role TBD",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 3",
-      role: "Marketing & Outreach",
+      name: "Emmanuela Mununkum",
+      role: "Role TBD",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 4",
-      role: "Operations",
+      name: "Fabian Flocken",
+      role: "Role TBD",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 5",
-      role: "Finance",
+      name: "Jessica Blehm",
+      role: "Role TBD",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 6",
-      role: "Research & Development",
+      name: "Nicolas Seul",
+      role: "Role TBD",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Patrick Janke",
+      role: "Role TBD",
       image: "/placeholder.svg"
     }
   ];
