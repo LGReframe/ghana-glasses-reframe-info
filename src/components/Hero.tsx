@@ -1,27 +1,17 @@
-
 import { Button } from "@/components/ui/button";
 import { Glasses } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Hero = () => {
-  return (
-    <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
+  return <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
       {/* Background image with low transparency */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{
-          backgroundImage: 'url(/lovable-uploads/5dda9312-67ea-4bc0-8ea3-06b8483c2fe7.png)'
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
+      backgroundImage: 'url(/lovable-uploads/5dda9312-67ea-4bc0-8ea3-06b8483c2fe7.png)'
+    }} />
       
       {/* Content overlay */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <div className="flex justify-center mb-8">
-          <img 
-            src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" 
-            alt="Reframe Logo" 
-            className="h-24 md:h-32 object-contain rounded-lg" 
-          />
+          <img src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" alt="Reframe Logo" className="h-24 md:h-32 object-contain rounded-lg" />
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
@@ -51,11 +41,9 @@ const Hero = () => {
         </div>
         
         <div className="mt-16 flex justify-center">
-          <Glasses className="h-16 w-16 text-gray-400 animate-pulse" />
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
