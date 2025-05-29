@@ -1,5 +1,6 @@
 
 import { User } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Team = () => {
   const teamMembers = [
@@ -21,7 +22,7 @@ const Team = () => {
     {
       name: "Fabian Flocken",
       role: "Role TBD",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/f9be8d56-56fb-454c-8c4d-4d0215d9c0aa.png"
     },
     {
       name: "Jessica Blehm",
@@ -55,10 +56,17 @@ const Team = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-gradient-to-br from-gray-50 to-slate-100 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="mb-4">
-                <div className="w-24 h-24 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
-                  <User className="h-12 w-12 text-gray-400" />
-                </div>
+              <div className="mb-4 flex justify-center">
+                <Avatar className="w-24 h-24">
+                  <AvatarImage 
+                    src={member.image} 
+                    alt={member.name}
+                    className="object-cover object-center"
+                  />
+                  <AvatarFallback className="bg-gray-200">
+                    <User className="h-12 w-12 text-gray-400" />
+                  </AvatarFallback>
+                </Avatar>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {member.name}
