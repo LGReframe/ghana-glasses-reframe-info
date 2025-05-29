@@ -1,35 +1,45 @@
 import { User } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 const Team = () => {
-  const teamMembers = [{
-    name: "Max Dannenbaum",
-    role: "Project Lead",
-    image: "/placeholder.svg"
-  }, {
-    name: "Constantin Beever",
-    role: "Role TBD",
-    image: "/placeholder.svg"
-  }, {
-    name: "Emmanuela Mununkum",
-    role: "Role TBD",
-    image: "/placeholder.svg"
-  }, {
-    name: "Fabian Flocken",
-    role: "Role TBD",
-    image: "/lovable-uploads/f9be8d56-56fb-454c-8c4d-4d0215d9c0aa.png"
-  }, {
-    name: "Jessica Blehm",
-    role: "Role TBD",
-    image: "/placeholder.svg"
-  }, {
-    name: "Nicolas Seul",
-    role: "Role TBD",
-    image: "/placeholder.svg"
-  }, {
-    name: "Patrick Janke",
-    role: "Role TBD",
-    image: "/placeholder.svg"
-  }];
+  const teamMembers = [
+    {
+      name: "Max Dannenbaum",
+      role: "Project Lead",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Constantin Beever",
+      role: "Role TBD",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Emmanuela Mununkum",
+      role: "Role TBD",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Fabian Flocken",
+      role: "PR",
+      image: "/lovable-uploads/f9be8d56-56fb-454c-8c4d-4d0215d9c0aa.png"
+    },
+    {
+      name: "Jessica Blehm",
+      role: "Role TBD",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Nicolas Seul",
+      role: "Role TBD",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Patrick Janke",
+      role: "Role TBD",
+      image: "/placeholder.svg"
+    }
+  ];
+
   return <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -62,4 +72,5 @@ const Team = () => {
       </div>
     </section>;
 };
+
 export default Team;
