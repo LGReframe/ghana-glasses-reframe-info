@@ -1,8 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { FileText, ArrowRight } from "lucide-react";
 
 const Survey = () => {
+  const handleSurveyClick = () => {
+    window.open("https://evasys.leuphana.de/evasys/public/online/index/index?online_php=&p=Survey1&ONLINEID=79733511747139648131331712312576848297271", '_blank');
+  };
+
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-gray-800 to-gray-900">
       <div className="max-w-4xl mx-auto text-center">
@@ -42,6 +45,7 @@ const Survey = () => {
         <Button 
           size="lg" 
           className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 group"
+          onClick={handleSurveyClick}
         >
           Take Our Survey
           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
