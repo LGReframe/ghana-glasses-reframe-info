@@ -1,12 +1,25 @@
+
 import { Button } from "@/components/ui/button";
 import { Glasses } from "lucide-react";
 import { Link } from "react-router-dom";
-const Hero = () => {
-  return <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
+
+interface HeroProps {
+  surveyLink?: string;
+}
+
+const Hero = ({ surveyLink }: HeroProps) => {
+  const handleSurveyClick = () => {
+    if (surveyLink) {
+      window.open(surveyLink, '_blank');
+    }
+  };
+
+  return (
+    <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
       {/* Background image with low transparency */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
-      backgroundImage: 'url(/lovable-uploads/5dda9312-67ea-4bc0-8ea3-06b8483c2fe7.png)'
-    }} />
+        backgroundImage: 'url(/lovable-uploads/5dda9312-67ea-4bc0-8ea3-06b8483c2fe7.png)'
+      }} />
       
       {/* Content overlay */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
@@ -30,7 +43,13 @@ const Hero = () => {
               Learn Our Story
             </Button>
           </Link>
-          <Button variant="outline" size="lg" className="border-gray-400 text-gray-700 hover:bg-gray-100 px-8 py-3 rounded-lg transition-all duration-300">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-gray-400 text-gray-700 hover:bg-gray-100 px-8 py-3 rounded-lg transition-all duration-300"
+            onClick={handleSurveyClick}
+            disabled={!surveyLink}
+          >
             Take Our Survey
           </Button>
           <Link to="/apply">
@@ -44,6 +63,8 @@ const Hero = () => {
           
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

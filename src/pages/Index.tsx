@@ -8,10 +8,13 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  // You can change this URL to your actual survey link
+  const surveyUrl = "https://forms.google.com/your-survey-link";
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
-      <Hero />
+      <Hero surveyLink={surveyUrl} />
       <Mission />
       <Team />
       <About />
