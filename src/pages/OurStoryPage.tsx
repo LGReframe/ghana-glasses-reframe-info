@@ -7,23 +7,23 @@ const OurStoryPage = () => {
   const milestones = [
     {
       icon: Lightbulb,
-      title: "The Idea",
-      description: "Recognizing the need for affordable vision care in Ghana, our team identified an opportunity to make a real difference."
+      title: "2021 - The Beginning",
+      description: "Reframe got started with the vision of making vision care accessible and affordable in Ghana."
     },
     {
       icon: Users,
-      title: "Team Formation",
-      description: "Six passionate students from Enactus Lüneburg came together with a shared vision of social impact."
+      title: "2023 - National Recognition",
+      description: "We competed in the National Cup from Enactus Germany, showcasing our commitment to social entrepreneurship."
     },
     {
       icon: Target,
-      title: "Project Development",
-      description: "We developed the Reframe concept, focusing on sustainable and affordable reading glasses distribution."
+      title: "2024 - New Leadership",
+      description: "Max took the Project Lead and the project began making strong progress with renewed focus and direction."
     },
     {
       icon: Globe,
-      title: "Impact Planning",
-      description: "Currently planning our implementation strategy to bring vision care to communities in Ghana."
+      title: "Current Phase - Local Testing",
+      description: "At the moment we're trying to start in a local area to test, gather data and expand our network."
     }
   ];
 
