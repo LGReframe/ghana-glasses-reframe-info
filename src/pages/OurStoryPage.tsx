@@ -28,10 +28,15 @@ const OurStoryPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 relative">
+      {/* Traditional Ghanaian pattern overlay */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.4'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm10 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      }} />
+      
       <Navigation />
       
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 relative">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -45,10 +50,10 @@ const OurStoryPage = () => {
           
           <div className="space-y-12">
             {milestones.map((milestone, index) => (
-              <div key={index} className="flex items-start space-x-6 bg-white rounded-xl p-8 shadow-lg">
+              <div key={index} className="flex items-start space-x-6 bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-orange-100">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-slate-200 rounded-xl flex items-center justify-center">
-                    <milestone.icon className="h-8 w-8 text-gray-600" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-amber-100 to-orange-200 rounded-xl flex items-center justify-center border-2 border-orange-200">
+                    <milestone.icon className="h-8 w-8 text-orange-700" />
                   </div>
                 </div>
                 <div>
@@ -63,12 +68,18 @@ const OurStoryPage = () => {
             ))}
           </div>
           
-          <div className="mt-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-center text-white">
-            <h2 className="text-3xl font-bold mb-4">What's Next?</h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              We're actively working on implementing our vision and are excited to share 
-              our progress as we move forward with bringing affordable vision care to Ghana.
-            </p>
+          <div className="mt-16 bg-gradient-to-br from-orange-800 via-red-800 to-amber-900 rounded-2xl p-8 text-center text-white relative overflow-hidden">
+            {/* Traditional pattern overlay */}
+            <div className="absolute inset-0 opacity-10" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`
+            }} />
+            <div className="relative z-10">
+              <h2 className="text-3xl font-bold mb-4">What's Next?</h2>
+              <p className="text-xl text-orange-100 leading-relaxed">
+                We're actively working on implementing our vision and are excited to share 
+                our progress as we move forward with bringing affordable vision care to Ghana.
+              </p>
+            </div>
           </div>
         </div>
       </section>
