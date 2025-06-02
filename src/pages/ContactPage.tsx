@@ -1,7 +1,7 @@
 
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Mail, MapPin, Phone, Globe } from "lucide-react";
+import { Mail, MapPin, Phone, Globe, Instagram } from "lucide-react";
 
 const ContactPage = () => {
   const contactInfo = [
@@ -28,6 +28,12 @@ const ContactPage = () => {
       title: "Enactus Lüneburg",
       info: "www.enactus-lueneburg.de",
       link: "https://www.enactus-lueneburg.de"
+    },
+    {
+      icon: Instagram,
+      title: "Instagram",
+      info: "@reframelg",
+      link: "https://www.instagram.com/reframelg?igsh=MThmbmwwOHl0aXJndg=="
     }
   ];
 
@@ -63,6 +69,8 @@ const ContactPage = () => {
                       <a 
                         href={contact.link}
                         className="text-gray-600 hover:text-gray-800 transition-colors whitespace-pre-line"
+                        target={contact.title === "Instagram" ? "_blank" : undefined}
+                        rel={contact.title === "Instagram" ? "noopener noreferrer" : undefined}
                       >
                         {contact.info}
                       </a>

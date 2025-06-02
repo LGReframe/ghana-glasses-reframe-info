@@ -1,12 +1,12 @@
 
-import { Mail, Globe, Users } from "lucide-react";
+import { Mail, Globe, Users, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="py-12 px-4 bg-gray-900 text-gray-300">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img 
@@ -37,6 +37,21 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-gray-400" />
                 <span>Sustainable impact</span>
               </div>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold text-white mb-4">Follow Us</h4>
+            <div className="space-y-3">
+              <a 
+                href="https://www.instagram.com/reframelg?igsh=MThmbmwwOHl0aXJndg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+                <span>@reframelg</span>
+              </a>
             </div>
           </div>
           
