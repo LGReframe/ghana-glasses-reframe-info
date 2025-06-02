@@ -1,4 +1,5 @@
 
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,7 +10,7 @@ import { Glasses, Users, MapPin } from "lucide-react";
 
 const ApplyPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
       <Navigation />
       
       <section className="py-20 px-4">
@@ -26,29 +27,29 @@ const ApplyPage = () => {
           
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <Card>
-                <CardHeader>
+              <Card className="border-amber-200 shadow-lg">
+                <CardHeader className="bg-gradient-to-r from-amber-50 to-orange-50">
                   <CardTitle className="flex items-center space-x-2">
-                    <Glasses className="h-6 w-6" />
+                    <Glasses className="h-6 w-6 text-amber-700" />
                     <span>Application Form</span>
                   </CardTitle>
                   <CardDescription>
                     Please provide your information so we can contact you about the Reframe project.
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-6 p-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         First Name *
                       </label>
-                      <Input placeholder="Enter your first name" />
+                      <Input placeholder="Enter your first name" className="border-amber-200 focus:border-amber-500" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Last Name *
                       </label>
-                      <Input placeholder="Enter your last name" />
+                      <Input placeholder="Enter your last name" className="border-amber-200 focus:border-amber-500" />
                     </div>
                   </div>
                   
@@ -56,21 +57,21 @@ const ApplyPage = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address *
                     </label>
-                    <Input type="email" placeholder="Enter your email address" />
+                    <Input type="email" placeholder="Enter your email address" className="border-amber-200 focus:border-amber-500" />
                   </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
                     </label>
-                    <Input placeholder="Enter your phone number" />
+                    <Input placeholder="Enter your phone number" className="border-amber-200 focus:border-amber-500" />
                   </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Location in Ghana *
                     </label>
-                    <Input placeholder="City, Region" />
+                    <Input placeholder="City, Region" className="border-amber-200 focus:border-amber-500" />
                   </div>
                   
                   <div>
@@ -79,7 +80,7 @@ const ApplyPage = () => {
                     </label>
                     <Textarea 
                       placeholder="Please describe any vision difficulties you're experiencing with reading or close-up work..."
-                      className="min-h-[120px]"
+                      className="min-h-[120px] border-amber-200 focus:border-amber-500"
                     />
                   </div>
                   
@@ -89,11 +90,11 @@ const ApplyPage = () => {
                     </label>
                     <Textarea 
                       placeholder="Any additional information you'd like to share..."
-                      className="min-h-[80px]"
+                      className="min-h-[80px] border-amber-200 focus:border-amber-500"
                     />
                   </div>
                   
-                  <Button className="w-full bg-gray-700 hover:bg-gray-800">
+                  <Button className="w-full bg-amber-600 hover:bg-amber-700">
                     Submit Application
                   </Button>
                 </CardContent>
@@ -101,13 +102,15 @@ const ApplyPage = () => {
             </div>
             
             <div className="space-y-6">
-              <Card>
-                <CardContent className="p-6">
+              <Card className="border-green-200">
+                <CardContent className="p-6 bg-gradient-to-br from-green-50 to-emerald-50">
                   <div className="flex items-center space-x-3 mb-4">
-                    <Users className="h-8 w-8 text-gray-600" />
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                      <Users className="h-8 w-8 text-green-700" />
+                    </div>
                     <div>
                       <h3 className="font-semibold text-gray-800">Community Impact</h3>
-                      <p className="text-sm text-gray-600">Helping communities together</p>
+                      <p className="text-sm text-green-700">Helping communities together</p>
                     </div>
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -116,13 +119,15 @@ const ApplyPage = () => {
                 </CardContent>
               </Card>
               
-              <Card>
-                <CardContent className="p-6">
+              <Card className="border-teal-200">
+                <CardContent className="p-6 bg-gradient-to-br from-teal-50 to-blue-50">
                   <div className="flex items-center space-x-3 mb-4">
-                    <MapPin className="h-8 w-8 text-gray-600" />
+                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
+                      <MapPin className="h-8 w-8 text-teal-700" />
+                    </div>
                     <div>
                       <h3 className="font-semibold text-gray-800">Local Focus</h3>
-                      <p className="text-sm text-gray-600">Starting in Ghana</p>
+                      <p className="text-sm text-teal-700">Starting in Ghana</p>
                     </div>
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -131,9 +136,9 @@ const ApplyPage = () => {
                 </CardContent>
               </Card>
               
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white">
+              <div className="bg-gradient-to-br from-orange-600 to-red-700 rounded-xl p-6 text-white">
                 <h3 className="text-lg font-semibold mb-3">Next Steps</h3>
-                <div className="space-y-2 text-sm text-gray-300">
+                <div className="space-y-2 text-sm text-orange-100">
                   <p>1. Submit your application</p>
                   <p>2. We'll review your information</p>
                   <p>3. Our team will contact you</p>
@@ -151,3 +156,4 @@ const ApplyPage = () => {
 };
 
 export default ApplyPage;
+

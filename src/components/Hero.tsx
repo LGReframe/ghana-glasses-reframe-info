@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Glasses } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,7 +16,7 @@ const Hero = ({ surveyLink }: HeroProps) => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-100 to-slate-200 py-20 px-4">
+    <section className="relative bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 py-20 px-4">
       {/* Background image with low transparency */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
         backgroundImage: 'url(/lovable-uploads/5dda9312-67ea-4bc0-8ea3-06b8483c2fe7.png)'
@@ -29,31 +30,31 @@ const Hero = ({ surveyLink }: HeroProps) => {
         
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
           Clear Vision for
-          <span className="block text-gray-600">Everyone</span>
+          <span className="block text-amber-700">Everyone</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
           Providing affordable reading glasses to communities in Ghana, 
           making vision correction accessible to those who need it most.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link to="/our-story">
-            <Button size="lg" className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg transition-all duration-300">
+            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg transition-all duration-300">
               Learn Our Story
             </Button>
           </Link>
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-gray-400 text-gray-700 hover:bg-gray-100 px-8 py-3 rounded-lg transition-all duration-300"
+            className="border-amber-500 text-amber-700 hover:bg-amber-50 px-8 py-3 rounded-lg transition-all duration-300"
             onClick={handleSurveyClick}
             disabled={!surveyLink}
           >
             Take Our Survey
           </Button>
           <Link to="/apply">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg transition-all duration-300">
               Apply for Glasses
             </Button>
           </Link>
@@ -68,3 +69,4 @@ const Hero = ({ surveyLink }: HeroProps) => {
 };
 
 export default Hero;
+

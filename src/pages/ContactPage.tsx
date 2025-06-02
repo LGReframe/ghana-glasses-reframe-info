@@ -1,4 +1,5 @@
 
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Mail, MapPin, Phone, Globe, Instagram } from "lucide-react";
@@ -38,7 +39,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-teal-50 to-emerald-50">
       <Navigation />
       
       <section className="py-20 px-4">
@@ -54,11 +55,11 @@ const ContactPage = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             {contactInfo.map((contact, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div key={index} className="bg-white border border-green-100 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-green-50">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-gradient-to-br from-gray-100 to-slate-200 rounded-lg flex items-center justify-center">
-                      <contact.icon className="h-6 w-6 text-gray-600" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-teal-200 rounded-lg flex items-center justify-center">
+                      <contact.icon className="h-6 w-6 text-green-700" />
                     </div>
                   </div>
                   <div>
@@ -68,7 +69,7 @@ const ContactPage = () => {
                     {contact.link ? (
                       <a 
                         href={contact.link}
-                        className="text-gray-600 hover:text-gray-800 transition-colors whitespace-pre-line"
+                        className="text-gray-600 hover:text-green-700 transition-colors whitespace-pre-line"
                         target={contact.title === "Instagram" ? "_blank" : undefined}
                         rel={contact.title === "Instagram" ? "noopener noreferrer" : undefined}
                       >
@@ -85,9 +86,9 @@ const ContactPage = () => {
             ))}
           </div>
           
-          <div className="mt-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-center text-white">
+          <div className="mt-16 bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl p-8 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-amber-100 leading-relaxed">
               Whether you're interested in our work, want to collaborate, or have questions about vision care in Ghana, 
               we're here to help and would love to connect with you.
             </p>
@@ -101,3 +102,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
