@@ -10,6 +10,8 @@ import AboutEnactusPage from "./pages/AboutEnactusPage";
 import OurStoryPage from "./pages/OurStoryPage";
 import ContactPage from "./pages/ContactPage";
 import ApplyPage from "./pages/ApplyPage";
+import ImpressumPage from "./pages/ImpressumPage";
+import PrivacyPage from "./pages/PrivacyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/our-story" element={<OurStoryPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/apply" element={<ApplyPage />} />
+          <Route path="/impressum" element={<ImpressumPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

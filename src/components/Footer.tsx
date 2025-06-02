@@ -68,11 +68,28 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2025 Enactus Lüneburg • Reframe Project • 
-            <span className="text-gray-500"> Making vision accessible for all</span>
-          </p>
+        <div className="border-t border-gray-700 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-center md:text-left">
+              © 2025 Enactus Lüneburg • Reframe Project • 
+              <span className="text-gray-500"> Making vision accessible for all</span>
+            </p>
+            
+            <div className="flex space-x-6 text-sm">
+              <Link 
+                to="/impressum" 
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Impressum
+              </Link>
+              <Link 
+                to="/privacy" 
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Datenschutz
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
