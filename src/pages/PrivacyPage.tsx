@@ -11,81 +11,81 @@ const PrivacyPage = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Datenschutzerklärung
+              Privacy Policy
             </h1>
           </div>
           
           <div className="bg-white border border-green-100 rounded-xl p-8 shadow-lg">
             <div className="space-y-6 text-gray-600">
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">1. Datenschutz auf einen Blick</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">1. Data Protection at a Glance</h2>
                 <div className="space-y-3">
-                  <h3 className="font-medium text-gray-700">Allgemeine Hinweise</h3>
-                  <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+                  <h3 className="font-medium text-gray-700">General Information</h3>
+                  <p>The following gives a simple overview of what happens to your personal information when you visit our website. Personal information is any data with which you could be personally identified.</p>
                 </div>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">2. Allgemeine Hinweise und Pflichtinformationen</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">2. General Information and Mandatory Information</h2>
                 <div className="space-y-3">
-                  <h3 className="font-medium text-gray-700">Datenschutz</h3>
-                  <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+                  <h3 className="font-medium text-gray-700">Data Protection</h3>
+                  <p>The operators of this website take the protection of your personal data very seriously. We treat your personal data as confidential and in accordance with the statutory data protection regulations and this privacy policy.</p>
                   
-                  <h3 className="font-medium text-gray-700">Hinweis zur verantwortlichen Stelle</h3>
-                  <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+                  <h3 className="font-medium text-gray-700">Information about the responsible party</h3>
+                  <p>The party responsible for data processing on this website is:</p>
                   <p className="ml-4">
                     Enactus Lüneburg e.V.<br />
                     Universitätsallee 1<br />
                     21335 Lüneburg<br />
-                    Deutschland<br />
+                    Germany<br />
                     <br />
-                    Telefon: +49 (0) 4131 677-0<br />
-                    E-Mail: reframe@enactus-lueneburg.de
+                    Phone: +49 (0) 4131 677-0<br />
+                    Email: reframe@enactus-lueneburg.de
                   </p>
                 </div>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">3. Datenerfassung auf dieser Website</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">3. Data Collection on this Website</h2>
                 <div className="space-y-3">
                   <h3 className="font-medium text-gray-700">Cookies</h3>
-                  <p>Diese Website verwendet keine Cookies für die Grundfunktionalität. Sollten in Zukunft Cookies verwendet werden, werden Sie entsprechend informiert.</p>
+                  <p>This website does not use cookies for basic functionality. Should cookies be used in the future, you will be informed accordingly.</p>
                   
-                  <h3 className="font-medium text-gray-700">Server-Log-Dateien</h3>
-                  <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+                  <h3 className="font-medium text-gray-700">Server Log Files</h3>
+                  <p>The website provider automatically collects and stores information that your browser automatically transmits to us in "server log files". These are:</p>
                   <ul className="list-disc ml-6 space-y-1">
-                    <li>Browsertyp und Browserversion</li>
-                    <li>verwendetes Betriebssystem</li>
+                    <li>Browser type and browser version</li>
+                    <li>Operating system used</li>
                     <li>Referrer URL</li>
-                    <li>Hostname des zugreifenden Rechners</li>
-                    <li>Uhrzeit der Serveranfrage</li>
-                    <li>IP-Adresse</li>
+                    <li>Host name of the accessing computer</li>
+                    <li>Time of the server request</li>
+                    <li>IP address</li>
                   </ul>
                 </div>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">4. Kontaktformular</h2>
-                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">4. Contact Form</h2>
+                <p>If you send us inquiries via the contact form, your details from the inquiry form including the contact details you provided there will be stored by us for the purpose of processing the inquiry and in case of follow-up questions.</p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">5. Ihre Rechte</h2>
-                <p>Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen.</p>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">5. Your Rights</h2>
+                <p>You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time without charge. You also have the right to request the correction, blocking, or deletion of this data.</p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">6. Externe Links</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">6. External Links</h2>
                 <div className="space-y-3">
                   <h3 className="font-medium text-gray-700">Instagram</h3>
-                  <p>Diese Website enthält Links zu Instagram. Beim Klick auf diese Links werden Sie zu Instagram weitergeleitet. Wir haben keinen Einfluss auf die Datenverarbeitung durch Instagram. Informationen zum Datenschutz bei Instagram finden Sie in der Datenschutzerklärung von Instagram.</p>
+                  <p>This website contains links to Instagram. When you click on these links, you will be redirected to Instagram. We have no influence on the data processing by Instagram. Information about data protection at Instagram can be found in Instagram's privacy policy.</p>
                 </div>
               </div>
               
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-500">
-                  Stand: Januar 2025<br />
-                  Diese Datenschutzerklärung wurde mit dem Datenschutz-Generator erstellt.
+                  Last updated: January 2025<br />
+                  This privacy policy was created with a privacy policy generator.
                 </p>
               </div>
             </div>

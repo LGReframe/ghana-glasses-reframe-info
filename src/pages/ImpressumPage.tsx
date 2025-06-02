@@ -11,80 +11,80 @@ const ImpressumPage = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Impressum
+              Legal Notice
             </h1>
           </div>
           
           <div className="bg-white border border-green-100 rounded-xl p-8 shadow-lg">
             <div className="space-y-6">
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Angaben gemäß § 5 TMG</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">Information pursuant to § 5 TMG</h2>
                 <p className="text-gray-600">
                   Enactus Lüneburg e.V.<br />
                   Universitätsallee 1<br />
                   21335 Lüneburg<br />
-                  Deutschland
+                  Germany
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Vertreten durch</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">Represented by</h2>
                 <p className="text-gray-600">
-                  [Vorstandsvorsitzender Name]<br />
-                  [Weitere Vorstandsmitglieder]
+                  [Board Chairman Name]<br />
+                  [Additional Board Members]
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Kontakt</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">Contact</h2>
                 <p className="text-gray-600">
-                  Telefon: +49 (0) 4131 677-0<br />
-                  E-Mail: reframe@enactus-lueneburg.de
+                  Phone: +49 (0) 4131 677-0<br />
+                  Email: reframe@enactus-lueneburg.de
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Registereintrag</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">Register Entry</h2>
                 <p className="text-gray-600">
-                  Eintragung im Vereinsregister.<br />
-                  Registergericht: [Amtsgericht]<br />
-                  Registernummer: [VR-Nummer]
+                  Entry in the Association Register.<br />
+                  Register Court: [District Court]<br />
+                  Registration Number: [VR-Number]
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Umsatzsteuer-ID</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">VAT ID</h2>
                 <p className="text-gray-600">
-                  Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                  [USt-IdNr. falls vorhanden]
+                  VAT identification number according to § 27 a Value Added Tax Act:<br />
+                  [VAT-ID if applicable]
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">Responsible for content according to § 55 para. 2 RStV</h2>
                 <p className="text-gray-600">
-                  [Name des Verantwortlichen]<br />
+                  [Name of Responsible Person]<br />
                   Universitätsallee 1<br />
                   21335 Lüneburg
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 mb-3">Haftungsausschluss</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">Disclaimer</h2>
                 <div className="space-y-4 text-gray-600">
                   <div>
-                    <h3 className="font-medium text-gray-700">Haftung für Inhalte</h3>
-                    <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+                    <h3 className="font-medium text-gray-700">Liability for Content</h3>
+                    <p>As service providers, we are liable for own contents of these websites according to general laws. However, we are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of law, we will immediately remove the content in question.</p>
                   </div>
                   
                   <div>
-                    <h3 className="font-medium text-gray-700">Haftung für Links</h3>
-                    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+                    <h3 className="font-medium text-gray-700">Liability for Links</h3>
+                    <p>Our website contains links to external websites, over whose contents we have no control. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages.</p>
                   </div>
                   
                   <div>
-                    <h3 className="font-medium text-gray-700">Urheberrecht</h3>
-                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                    <h3 className="font-medium text-gray-700">Copyright</h3>
+                    <p>The contents and works on these pages created by the site operators are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator.</p>
                   </div>
                 </div>
               </div>
