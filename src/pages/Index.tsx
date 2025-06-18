@@ -5,6 +5,7 @@ import Mission from "@/components/Mission";
 import Team from "@/components/Team";
 import Survey from "@/components/Survey";
 import About from "@/components/About";
+import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,6 +20,11 @@ const Index = () => {
       <Team />
       <About />
       <Survey />
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <Newsletter />
+        </div>
+      </section>
       <Footer />
     </div>
   );
