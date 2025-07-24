@@ -25,7 +25,7 @@ const Hero = ({ surveyLink }: HeroProps) => {
       {/* Content overlay */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <div className="flex justify-center mb-8">
-          <img src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" alt="Reframe Logo" className="h-24 md:h-32 object-contain rounded-lg" />
+          <img src="/logos/Reframe_Logo-komplett.svg" alt="Reframe Logo" className="h-24 md:h-32 object-contain rounded-lg" />
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">

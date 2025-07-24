@@ -1,0 +1,21 @@
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 2px;
+    width: 100%;
+    background-color: #D48B53;
+    transition: transform 0.3s ease;
+}
+
+.underline-animation:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}

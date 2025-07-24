@@ -13,6 +13,11 @@ import ApplyPage from "./pages/ApplyPage";
 import ImpressumPage from "./pages/ImpressumPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFound from "./pages/NotFound";
+import ContributePage from "./pages/ContributePage";
+
+
+
+import './styles/underline.css';
 
 const queryClient = new QueryClient();
 
@@ -31,6 +36,7 @@ const App = () => (
           <Route path="/apply" element={<ApplyPage />} />
           <Route path="/impressum" element={<ImpressumPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/contribute" element={<ContributePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -40,3 +46,4 @@ const App = () => (
 );
 
 export default App;
+

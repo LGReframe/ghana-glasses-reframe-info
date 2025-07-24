@@ -9,12 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/126b97c5-b912-4bc5-bafc-fd4ac4508589.png" 
-                alt="Reframe Logo" 
-                className="h-8 object-contain rounded"
-              />
-              <h3 className="text-xl font-bold text-white">Reframe</h3>
+              <h4 className="text-lg font-semibold text-white">Reframe</h4>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Making vision correction accessible and affordable for communities in Ghana 

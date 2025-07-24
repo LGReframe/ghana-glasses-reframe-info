@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 567.74 81.19">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .9em;
+      }
+
+      .cls-2 {
+        letter-spacing: .8em;
+      }
+
+      .cls-3 {
+        fill: #d48b53;
+        font-family: AdelleSansDevanagari-Bold, 'Adelle Sans Devanagari';
+        font-size: 58.37px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 50.31)"><tspan class="cls-1" x="0" y="0">REF</tspan><tspan class="cls-2" x="261.37" y="0">RAME</tspan></text>
+</svg>
