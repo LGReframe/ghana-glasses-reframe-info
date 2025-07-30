@@ -1,0 +1,12 @@
+[functions]
+directory = "netlify/functions"
+
+[dev]
+framework = "vite"
+targetPort = 5173
+
+[[redirects]]
+from = "/.netlify/functions/*"
+to = "/.netlify/functions/:splat"
+status = 200
+force = true
