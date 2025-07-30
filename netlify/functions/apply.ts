@@ -46,7 +46,7 @@ const handler: Handler = async (event) => {
             html: `
         <p>Hi ${firstName},</p>
         <p>Thanks for your application for reading glasses. Please confirm your email by clicking the button below:</p>
-        <p><a href="${BASE_URL}/api/confirm-application?token=${confirm_token}" target="_blank" style="padding:10px 20px;background:#f59e0b;color:#fff;border-radius:5px;text-decoration:none;">Confirm Application</a></p>
+        <p><a href="${BASE_URL}/.netlify/functions/confirm-application?token=${confirm_token}">
         <p>If you did not apply, you can ignore this email.</p>
       `,
         });
