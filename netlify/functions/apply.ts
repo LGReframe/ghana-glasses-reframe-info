@@ -40,16 +40,26 @@ const handler: Handler = async (event) => {
     `;
 
         await resend.emails.send({
-            from: "Reframe <noreply@updates.enactus-reframe.org>",
+            from: "Reframe <newsletter@updates.enactus-reframe.org>",
             to: [email],
-            subject: "Please confirm your application",
+            subject: "Please confirm your application for reading glasses",
             html: `
-        <p>Hi ${firstName},</p>
-        <p>Thanks for your application for reading glasses. Please confirm your email by clicking the button below:</p>
-        <p><a href="${BASE_URL}/.netlify/functions/confirm-application?token=${confirm_token}">
-        <p>If you did not apply, you can ignore this email.</p>
-      `,
+    <div style="font-family: Arial, sans-serif; line-height: 1.5; color: #333;">
+      <h2>Hi ${firstName},</h2>
+      <p>Thank you for applying to receive affordable reading glasses through our Reframe project.</p>
+      <p>To complete your application, please confirm your email address by clicking the button below:</p>
+      <p style="margin: 30px 0;">
+        <a href="${BASE_URL}/.netlify/functions/confirm-application?token=${confirm_token}"
+           style="display: inline-block; padding: 12px 20px; background-color: #f59e0b; color: white; text-decoration: none; border-radius: 6px;">
+          Confirm my email
+        </a>
+      </p>
+      <p>If you did not submit this application, you can safely ignore this message.</p>
+      <p>Warm regards,<br/>The Reframe Team</p>
+    </div>
+  `,
         });
+
 
         return {
             statusCode: 200,
