@@ -9,7 +9,7 @@ const About = () => {
             
             <div className="flex items-center space-x-4 bg-white p-4 rounded-xl border border-orange-100 shadow-sm">
               <div className="h-16 w-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center">
-                <img src="/lovable-uploads/24735b0c-8816-4b6c-85b9-323044f95e39.png" alt="Enactus Logo" className="h-12 w-12 object-contain" />
+                <img src="/Pictures/24735b0c-8816-4b6c-85b9-323044f95e39.png" alt="Enactus Logo" className="h-12 w-12 object-contain" />
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Enactus Global Network</h3>

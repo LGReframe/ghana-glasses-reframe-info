@@ -1,7 +1,10 @@
 import type { Config } from "tailwindcss";
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const tailwindcssAnimate = require("tailwindcss-animate");
+
 export default {
-	darkMode: ["class"],
+	darkMode: ["class"], // Dark Mode nicht verwendet, bleibt aber technisch möglich
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -18,8 +21,12 @@ export default {
 			},
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+				nunito: ['Nunito', 'sans-serif'],
+			},
 			colors: {
-				// Design Tokens (bestehendes Setup mit CSS Variablen)
+				// Bestehende Design Tokens (über CSS-Variablen)
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
@@ -64,13 +71,19 @@ export default {
 					ring: "hsl(var(--sidebar-ring))",
 				},
 
-				// Reframe Farbpalette
+				// 🎯 Reframe Brand Colors
 				reframe: {
-					primary: "#D48B53",     // Logo / Hauptakzent
-					text: "#000000",        // Text / Icons
-					cta: "#538FD4",         // Call-to-Action
-					background: "#F2E8DC",  // Sekundärhintergrund
-					highlight: "#82C8B5",   // Hervorhebungen
+					terracotta: "#D48B53",     // Headlines, Primärbutton
+					green: "#295E49",          // Sekundärbutton, Sektionen
+					turquoise: "#4F97A0",      // Interaktive Akzente
+					blue: "#538FD4",           // Optionaler CTA
+					highlight: "#82C8B5",      // Dezente Hervorhebungen
+					beige: "#FAF1E9",          // Haupt-Hintergrundfarbe
+					beigedark: "#F2E8DC",	   // Sekundär-Hintergrundfarbe
+					darktext: "#2C2C2C",       // Standard-Textfarbe
+					lightgrey: "#EADEDE", 	   //
+
+
 				},
 			},
 			borderRadius: {
@@ -94,5 +107,5 @@ export default {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [tailwindcssAnimate],
 } satisfies Config;
