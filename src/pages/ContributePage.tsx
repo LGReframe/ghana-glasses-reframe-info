@@ -6,16 +6,18 @@ const Contribute = () => {
     return (
         <>
             <Navigation />
-            <main className="bg-white min-h-screen px-4 py-16 sm:px-6 lg:px-8 text-gray-900">
+            <main className="bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 min-h-screen px-4 py-16 sm:px-6 lg:px-8 text-gray-900">
                 <div className="max-w-3xl mx-auto text-center">
                     <h1 className="text-4xl font-bold text-reframe-primary mb-4">Contribute to Reframe</h1>
                     <p className="text-lg text-gray-700 mb-8">
-                        Financial support allows us to scale our operations and reduce the cost of glasses for people in Ghana.
-                        Every donation helps us reach more communities and provide sustainable access to vision.                    </p>
+                        Financial support allows us to scale our operations and reduce the cost of glasses for people in
+                        Ghana.
+                        Every donation helps us reach more communities and provide sustainable access to vision. </p>
                 </div>
 
                 <section className="mt-20 max-w-4xl mx-auto grid gap-8 md:grid-cols-2">
-                    <div className="bg-reframe-background p-6 rounded shadow-sm">
+                    <div
+                        className="bg-white p-6 roundednetlify dex-lg shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                         <h3 className="text-xl font-semibold mb-4 text-reframe-primary">Donate by Bank Transfer</h3>
                         <p className="text-sm text-gray-800 mb-4">
                             You can support Reframe with a direct donation to our account:
@@ -32,10 +34,12 @@ const Contribute = () => {
                         </p>
                     </div>
 
-                    <div className="bg-reframe-background p-6 rounded shadow-sm border border-gray-200">
+                    <div
+                        className="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                         <h3 className="text-xl font-semibold mb-4 text-reframe-primary">Donate Glasses</h3>
                         <p className="text-sm text-gray-800 mb-4">
-                            Do you have old glasses? Any glasses will help, Reading, distance, or sunglasses you no longer use? Donating them helps someone regain access to the world around them.
+                            Do you have old glasses? Any glasses will help, Reading, distance, or sunglasses you no
+                            longer use? Donating them helps someone regain access to the world around them.
                         </p>
                         <p className="text-sm text-gray-700 mb-4">
                             Simply check their <a href="https://brillenweltweit.de/start/brillen-sammelstellen-liste/"

@@ -173,7 +173,7 @@ const ApplyPage = () => {
                           className="mt-1"
                       />
                       <label className="text-sm text-gray-600">
-                        I consent to the storage and processing of my data for contact and selection purposes in accordance with GDPR.
+                        I agree that Enactus Lüneburg e.V. may store and process the personal information provided in this form (including my name, email, and location) for the exclusive purpose of contacting me, assessing my eligibility for the glasses program, and sending relevant information or offers. I confirm that I have read and agree to the <a href="https://www.enactus-reframe.org/privacy" target="_blank" className="text-amber-600 hover:text-amber-700 underline font-semibold">Privacy Policy</a> regarding this data processing. <span className="text-red-500">*</span>
                       </label>
                     </div>
 
