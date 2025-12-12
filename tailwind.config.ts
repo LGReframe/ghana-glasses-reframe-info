@@ -80,6 +80,7 @@ export default {
 					highlight: "#82C8B5",      // Dezente Hervorhebungen
 					beige: "#FAF1E9",          // Haupt-Hintergrundfarbe
 					beigedark: "#F2E8DC",	   // Sekundär-Hintergrundfarbe
+					whiteice: "#f1fdf5",	   // Hintergrundfarbe
 					darktext: "#2C2C2C",       // Standard-Textfarbe
 					lightgrey: "#EADEDE", 	   //
 

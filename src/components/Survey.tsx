@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { FileText, ArrowRight } from "lucide-react";
 
@@ -8,59 +7,77 @@ const Survey = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-green-800 via-emerald-800 to-teal-800">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-8">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <FileText className="h-10 w-10 text-green-700" />
-          </div>
-        </div>
-        
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          Help Us Improve
-        </h2>
-        
-        <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Your insights are invaluable to our mission. Take our survey to help us better 
-          understand vision care needs and improve our Reframe project.
-        </p>
-        
-        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-green-400/30">
-          <h3 className="text-xl font-semibold text-white mb-4">
-            What we'd love to know:
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6 text-green-100">
-            <div>
-              <h4 className="font-medium mb-2">Vision Care Access</h4>
-              <p className="text-sm">Current challenges and barriers</p>
-            </div>
-            <div>
-              <h4 className="font-medium mb-2">Price Sensitivity</h4>
-              <p className="text-sm">Affordable pricing expectations</p>
-            </div>
-            <div>
-              <h4 className="font-medium mb-2">Community Needs</h4>
-              <p className="text-sm">Local preferences and requirements</p>
+      <section className="py-20 px-4 bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-yellow-500 via-transparent to-transparent" />
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+
+          <div className="mb-6">
+            <div className="w-20 h-20 bg-emerald-800/50 border border-emerald-500/30 rounded-2xl flex items-center justify-center mx-auto shadow-lg backdrop-blur-sm transform rotate-3">
+              <FileText className="h-10 w-10 text-emerald-200" />
             </div>
           </div>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Help Us Improve <br/>
+            <span className="text-emerald-300">Vision Care in Ghana</span>
+          </h2>
+
+          <p className="text-xl text-emerald-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Are you currently living in Ghana? Your local insights are invaluable.
+            Please take this short survey to help us understand the real needs of your community.
+          </p>
+
+          {/* Info Box */}
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-10 border border-white/10 shadow-xl">
+            <h3 className="text-xl font-semibold text-white mb-6 flex items-center justify-center gap-2">
+              We need your local expertise on:
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-8 text-emerald-50">
+              {/* Box 1 */}
+              <div className="bg-black/20 border border-white/5 p-5 rounded-xl hover:bg-black/30 transition-colors">
+                <h4 className="font-bold text-emerald-300 mb-2 text-lg">Access</h4>
+                <p className="text-sm opacity-80 leading-relaxed">How hard is it to find glasses in your region?</p>
+              </div>
+
+              {/* Box 2 */}
+              <div className="bg-black/20 border border-white/5 p-5 rounded-xl hover:bg-black/30 transition-colors">
+                <h4 className="font-bold text-emerald-300 mb-2 text-lg">Costs</h4>
+                <p className="text-sm opacity-80 leading-relaxed">What is considered a fair price in Ghana?</p>
+              </div>
+
+              {/* Box 3 */}
+              <div className="bg-black/20 border border-white/5 p-5 rounded-xl hover:bg-black/30 transition-colors">
+                <h4 className="font-bold text-emerald-300 mb-2 text-lg">Needs</h4>
+                <p className="text-sm opacity-80 leading-relaxed">Which visual impairments are most common?</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Button Section */}
+          <div className="flex flex-col items-center gap-4">
+            <Button
+                size="lg"
+                className="bg-amber-500 text-gray-900 hover:bg-amber-400 px-10 py-6 rounded-xl text-lg font-bold transition-all duration-300 group shadow-lg shadow-amber-900/20 hover:scale-105 border border-amber-400/50"
+                onClick={handleSurveyClick}
+            >
+              Take the Survey (Ghana Only)
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
+
+            {/* NEU: Hintergrund-Box (Badge) für die Zeitanzeige */}
+            <div className="inline-block bg-black/30 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mt-2">
+              <p className="text-emerald-100 text-sm font-medium">
+                ⏱️ Takes only 3-5 minutes
+              </p>
+            </div>
+          </div>
+
         </div>
-        
-        <Button 
-          size="lg" 
-          className="bg-amber-500 text-gray-900 hover:bg-amber-400 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 group"
-          onClick={handleSurveyClick}
-        >
-          Take Our Survey
-          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-        </Button>
-        
-        <p className="text-green-200 mt-4 text-sm">
-          Takes only 3-5 minutes • Your responses help shape our impact
-        </p>
-      </div>
-    </section>
+      </section>
   );
 };
 
 export default Survey;
-

@@ -7,17 +7,17 @@ const Team = () => {
     {
       name: "Max Dannenbaum",
       role: "Project Lead",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/max.jpeg"
     },
     {
       name: "Constantin Beever",
       role: "Role TBD",
-      image: "/placeholder.svg"
+      image: ""
     },
     {
       name: "Emmanuela Mununkum",
       role: "Role TBD",
-      image: "/placeholder.svg"
+      image: ""
     },
     {
       name: "Fabian Flocken",
@@ -27,17 +27,17 @@ const Team = () => {
     {
       name: "Jessica Blehm",
       role: "Role TBD",
-      image: "/placeholder.svg"
+      image: ""
     },
     {
       name: "Nicolas Seul",
       role: "Role TBD",
-      image: "/placeholder.svg"
+      image: ""
     },
     {
       name: "Patrick Janke",
       role: "Role TBD",
-      image: "/placeholder.svg"
+      image: ""
     }
   ];
 

@@ -2,6 +2,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react"; // Import useState
 
+
+
+
+
 // --- Content Object ---
 // All text content is now stored here, separate from the JSX structure.
 const content = {

@@ -75,13 +75,14 @@ const Footer = () => {
                 to="/impressum" 
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Impressum
+                Legal Notice
+
               </Link>
               <Link 
                 to="/privacy" 
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Datenschutz
+                Privacy Policy
               </Link>
             </div>
           </div>
