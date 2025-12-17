@@ -51,10 +51,10 @@ const Navigation = () => {
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8 font-inter font-medium text-reframe-darktext text-base">
                 <Link
-                    to="/our-story"
+                    to="/our-mission"
                     className="underline-animation font-inter font-medium text-base text-reframe-terracotta"
                 >
-                  Our Story
+                  Our Mission
                 </Link>
                 <Link
                     to="/team"
@@ -115,7 +115,7 @@ const Navigation = () => {
                       className="block px-3 py-2 hover:bg-gray-50 rounded-md transition-colors"
                       onClick={closeMobileMenu}
                   >
-                    Our Story
+                    Our Mission
                   </Link>
                   <Link
                       to="/team"

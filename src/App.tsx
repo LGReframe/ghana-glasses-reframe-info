@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import TeamPage from "./pages/TeamPage";
 import AboutEnactusPage from "./pages/AboutEnactusPage";
-import OurStoryPage from "./pages/OurStoryPage";
+import OurMissionPage from "./pages/OurMissionPage.tsx";
 import ContactPage from "./pages/ContactPage";
 import ApplyPage from "./pages/ApplyPage";
 import ImpressumPage from "./pages/ImpressumPage";
@@ -31,7 +31,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/about-enactus" element={<AboutEnactusPage />} />
-          <Route path="/our-story" element={<OurStoryPage />} />
+          <Route path="/our-mission" element={<OurMissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/apply" element={<ApplyPage />} />
           <Route path="/impressum" element={<ImpressumPage />} />
