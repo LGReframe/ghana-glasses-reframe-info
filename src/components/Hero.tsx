@@ -43,7 +43,7 @@ const Hero = ({ surveyLink }: HeroProps) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/our-mission">
               <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg transition-all duration-300">
-               About =ur Mission
+               About Our Mission
               </Button>
             </Link>
             <Button
